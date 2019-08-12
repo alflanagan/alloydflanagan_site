@@ -1,24 +1,31 @@
-# README
+# My Personal Website - alloydflanagan.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
 
-* Ruby version
+Commands to create this site:
 
-* System dependencies
+Ruby on rails has recently released the second Release Candidate for version 6. I'm porting my personal web site to this version, to learn more about version 6, and take advantage of new features.
 
-* Configuration
+To set up Rails 6 on your machine, and assuming you've already got ruby (version 2.6) and rubygems installed, you can do:
 
-* Database creation
+```shell
+gem install rails -v 6.0.0.rc2
+```
 
-* Database initialization
+This site was created with the command:
 
-* How to run the test suite
+```shell
+rails _6.0.0.rc2_ new alloydflanagan_site -d postgresql -B --webpack=react
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```shell
+bundle install --path=vendor/bundle
+bundle binstubs bundler
+```
 
-* Deployment instructions
+Set up user `alloydflanagan_site` in postgres, and run:
 
-* ...
+```shell
+bin/rails db:create
+```
