@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Controller for pages related to blog entries
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]

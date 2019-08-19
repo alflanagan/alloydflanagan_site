@@ -1,4 +1,4 @@
-# frozen_string_literals: true
+# frozen_string_literal: true
 
 # Helpers for blog-related pages
 module BlogsHelper
