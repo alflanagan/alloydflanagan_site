@@ -8,10 +8,8 @@ AllCops:
     - 'vendor/**/*'
     - 'node_modules/**/*'
     - '.git/**/*'
-    - 'solargraph/*'
     - 'db/schema.rb'
     - 'db/seeds.rb'
-    - 'bootstrap*/**/*'
     - 'config/environments/*.rb'
 
 Metrics/LineLength:
@@ -25,3 +23,9 @@ Style/SymbolArray:
 
 Layout/IndentationConsistency:
   EnforcedStyle: 'indented_internal_methods'
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'db/migrate/*'
