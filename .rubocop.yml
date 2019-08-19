@@ -1,0 +1,27 @@
+inherit_from: .rubocop_todo.yml
+require: rubocop-performance
+
+AllCops:
+  # note Exclude: overrides, does not merge with, default.
+  Exclude:
+    - 'bin/*'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - '.git/**/*'
+    - 'solargraph/*'
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'bootstrap*/**/*'
+    - 'config/environments/*.rb'
+
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - 'db/migrate/**/*'
+    - 'config/initializers/*'
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Layout/IndentationConsistency:
+  EnforcedStyle: 'indented_internal_methods'
