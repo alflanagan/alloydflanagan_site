@@ -12,18 +12,3 @@
 # SupportedStyles: always, never
 Style/FrozenStringLiteralComment:
   Enabled: false
-
-# Offense count: 41
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'app/views/blogs/index.json.jbuilder'
-    - 'app/views/blogs/show.json.jbuilder'
-    - 'config/puma.rb'
-    - 'config/spring.rb'
-    - 'test/application_system_test_case.rb'
-    - 'test/channels/application_cable/connection_test.rb'
-    - 'test/controllers/blogs_controller_test.rb'
-    - 'test/system/blogs_test.rb'
